@@ -1,100 +1,24 @@
-<style>
-    #background {
-        width: 100vw;
-        height: 100vh;
-
-        background: rgba(255,255,255,0);
-
-        font-size: 15vmin;
-        font-family: 'Open Sans';
-
-        text-align: center;
-    }
-
-    body {
-        margin: 0;
-        overflow-x: hidden;
-    }
-
-    hr {
-        border: 1px solid black;
-        width: 80%;
-    }
-
-    #img {
-
-        width: 25vw;
-        margin: auto;
-        padding: 1vmin;
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    #links {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100vw;
-    }
-
-    .link {
-        height: 100vh;
-        width: 50vw;
-
-        opacity: 60%;
-        transition: opacity 200ms 50ms ease-in-out;
-
-        position: relative;
-    }
-    .link:hover {
-        opacity: 100%;
-    }
-
-    .link-text {
-        font-size: 5vmin;
-        font-family: 'Secular One';
-        color: inherit;
-
-        display: inline-block;
-        width: 100%;
-
-        position: absolute;
-        top: 50%;
-
-        text-align: center;
-    }
-
-    #one {
-        background: #cfcfcf;
-        color: #303030;
-    }
-
-    #two {
-        background: #303030;
-        color: #cfcfcf;
-    }
-</style>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Deccan Game Engine</title>
 
-    <!-- link href="https://fonts.googleapis.com/css2?family=Secular+One&family=Hammersmith+One&display=swap" rel="stylesheet" -->
+    <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <section id="background">
-        Deccan Game Engine
-        <hr>
         <div id="logo">
             <img src="deccan_icon.svg" alt="" id="img">
         </div>
+        Deccan Game Engine
+    </section>
+    <section id ="desc">
+        Deccan Game Engine is a cross-platform, free and open source 2D Game Engine written in C and powered by SDL2.
     </section>
     <section id="links">
-        <a href="https://discord.gg/H8uvh6S">
+        <a href="https://discord.gg/bNwnxwn">
             <div class="link" id="one">
                 <span class="link-text">
                     Join Discord Server
@@ -104,7 +28,7 @@
         <a href="https://github.com/iddev5/DeccanEngine">
             <div class="link" id="two">
                 <span class="link-text">
-                    See Source Code
+                    Source Code
                 </span>
             </div>
         </a>
